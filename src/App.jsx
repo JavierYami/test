@@ -1,6 +1,8 @@
 import Consumo from './components/Consumo/Consumo'
 import Header from './components/Header/Header'
 import Info from './components/Info/Info'
+import Inversion from './components/Inversion/Inversion'
+import Prestaciones from './components/Prestaciones/Prestaciones'
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
       <Header></Header>
       <Info></Info>
       <Consumo></Consumo>
+      <Prestaciones></Prestaciones>
+      <Inversion></Inversion>
     </>
   )
 }
