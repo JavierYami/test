@@ -1,0 +1,75 @@
+.mainContainerForm{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 42px 42px 82px;
+    background: linear-gradient(115deg, rgb(106, 180, 43) 0%, rgb(0, 62, 139) 100%);
+}
+
+.infoInversionesContainer{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row;
+    gap: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.formContainer{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 16px;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+.reviewsContainer {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+.formStyle{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 528px;
+    height: auto;
+    min-height: 511px;
+    padding: 27px 30px;
+    position: relative;
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    background: linear-gradient(124deg, rgba(255, 255, 255, 0.8) 1.06%, rgba(255, 255, 255, 0.4) 92.91%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px 2px;
+}
+
+.inputStyle {
+    width: 100%;
+    height: 68px;
+    padding: 14px 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-input);
+    background: var(--bg-input);
+    font-weight: 700;
+    font-size: 20px;
+}

@@ -1,4 +1,5 @@
 import Consumo from './components/Consumo/Consumo'
+import Form from './components/Form/Form'
 import Header from './components/Header/Header'
 import Info from './components/Info/Info'
 import Inversion from './components/Inversion/Inversion'
@@ -13,6 +14,7 @@ function App() {
       <Consumo></Consumo>
       <Prestaciones></Prestaciones>
       <Inversion></Inversion>
+      <Form></Form>
     </>
   )
 }
