@@ -1,3 +1,4 @@
+import Consumo from './components/Consumo/Consumo'
 import Header from './components/Header/Header'
 import Info from './components/Info/Info'
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header></Header>
       <Info></Info>
+      <Consumo></Consumo>
     </>
   )
 }

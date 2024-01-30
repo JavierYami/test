@@ -1,0 +1,35 @@
+.mainContainerConsumo{
+    margin: 50px 40px;
+}
+.consumoContainer{
+    display: flex;
+
+}
+.consumoInfo {
+    width: 50%;
+}
+.consumoGrid{
+    margin-bottom: 20px;
+    display: grid;
+    width: 100%;
+    height: 50%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.consumoColumn{
+    display: flex;
+    padding: 18px 2px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid rgb(106, 180, 43);
+    width: 100%;
+    font-size: 20px;
+}
+.flexContainerConsumo{
+    padding: 30px;
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
