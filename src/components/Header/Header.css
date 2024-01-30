@@ -1,0 +1,130 @@
+.container{
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background: #FFFFFF;
+}
+p{
+    color: #505050;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.headerContainer{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-flow: column;
+    gap: 94px;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 17px 0px 0px;
+    background-image: url(https://cmps-blanco.s3.amazonaws.com/pt/panels/solLivre_brasil/assets/bg-9311a524.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: var(--bg-overlay);
+    z-index: 0;
+}
+.imgLogo{
+    width: 104px;
+    height: auto;
+}
+.logoContainer{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row;
+    gap: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 637px;
+    padding: 25px 55px;
+    border-radius: 7px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    background:  linear-gradient(124deg, rgba(255, 255, 255, 0.60) 1.06%, rgba(255, 255, 255, 0.40) 92.91%);;
+    box-shadow:  0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    font-size: 36.8px;
+}
+.heroImg{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.container{
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    flex-flow: row;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.containerInfo{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 40px;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 697px;
+    min-width: 585.5px;
+    width: 50%;
+    min-height: 446px;
+    height: 100%;
+    padding: 47px 22px 22px 40px;
+    border-top-left-radius: 39px;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.3) -2px -4px 4px 2px;
+    z-index: 2;
+}
+
+button{
+    border: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 399px;
+    height: 101px;
+    color: var(--text-white);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--bg-button);
+    box-shadow: var(--box-shadow-button);
+}
+
