@@ -1,6 +1,5 @@
 .mainContainerPrestaciones {
     display: flex;
-    margin: 20px;
     -webkit-box-pack: center;
     justify-content: center;
     flex-flow: column;
@@ -13,7 +12,9 @@
 
 .prestacionesContainer {
     display: grid;
+    padding: 40px;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
     place-items: start stretch;
     -webkit-box-align: start;
 }
@@ -37,7 +38,7 @@
     flex-flow: row;
     -webkit-box-align: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding: 12px 64px 12px 15px;
     background: rgb(106, 180, 43);
     border: 1px solid var(--text-white);
@@ -59,8 +60,14 @@
     transition: all 0.5s ease 0s;
     transform: rotate(180deg);
 }
-
 .elementText {
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+    max-height: 0;
+}
+
+.elementText.show {
+    max-height: 1000px;
     display: flex;
     -webkit-box-pack: start;
     justify-content: flex-start;
@@ -73,7 +80,11 @@
     border: 1px solid var(--text-white);
     background: linear-gradient(181deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px 3px;
-    width: 100%;
-    transition: all 0.2s linear 0s;
+    width: 90%;
     overflow: hidden;
+}
+
+.elementText p{
+font-size: 15px;
+text-align: justify;
 }
