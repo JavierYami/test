@@ -37,7 +37,7 @@ const Form = () => {
                     </div>
                     <div className='cardContainerTwo'>
                         <div className='card'></div>
-                        <p className='cardText'>"No começo, fiz isso para economizar, mas quando descobri que também podia ganhar, percebi que tinha tomado a decisão certa... e tudo o que tive que fazer foi provar que sou brasileiro!" - André Da Silva</p>
+                        <p className='cardText'>"É o melhor investimento que já fiz! Desde que instalei os painéis solares, tenho uma economia estável e me sinto feliz em ser um agente de mudança no mundo, ajudando o meio ambiente com energia limpa." - Ana Santos</p>
                         <img className='cardImage' src="https://cmps-blanco.s3.amazonaws.com/pt/panels/solLivre_brasil/assets/img2-0ccc46d2.webp" alt="André photo" />
                     </div>
                     <div>

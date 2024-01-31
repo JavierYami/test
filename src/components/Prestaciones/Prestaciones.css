@@ -1,0 +1,79 @@
+.mainContainerPrestaciones {
+    display: flex;
+    margin: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 75px;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 70px 40px;
+}
+
+.prestacionesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: start stretch;
+    -webkit-box-align: start;
+}
+
+.containerElement {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.elementTitle {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-flow: row;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 64px 12px 15px;
+    background: rgb(106, 180, 43);
+    border: 1px solid var(--text-white);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px 3px;
+    color: var(--text-white);
+    position: relative;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.elementTitle::after {
+    content: "";
+    background: url(data:image/webp;base64,UklGRmQBAABXRUJQVlA4WAoAAAAQAAAAZwAANwAAQUxQSN4AAAABcBXZdhRdCZEQCUhAChKQgANwEJyMhEhAQiSwL3nv3prfiIDktpEkKUz1Pvd5AwC047ISL6eIy0Ja6ZfCWV4Flg9pldiIuIqsTSo3ZZVbVqH9mac8qVyKKhfRa9wAYFC4GThJdCWQhgnQMADPqHtD3DvaviDtG8q+Iuw7umqQVYeqWkTVo8kCSTZUAjqC7LhnyTkNPaChA+y55cEpHy55UQloinWubHNmmYRyJKE0AAWbSFhEoz4iIgFxqYtMTXS+J2GJsJ7X/3lTAOni/PxXqQHxQjf/yrqWnDrrXwBWUDggYAAAAHAGAJ0BKmgAOAA+bSyURqQiIiEsnRgAgA2JaQAVIAB1LYkV+8PYxoO3paPNFUQndPWUSnWJRhLdtp5EgAD++yGBl/bxAlf/xDuD/xOAJn/8Q8u/+IdBoffof//btgAAAA==) center center / cover no-repeat;
+    position: absolute;
+    width: 26px;
+    height: 14px;
+    right: 36px;
+    transition: all 0.5s ease 0s;
+    transform: rotate(180deg);
+}
+
+.elementText {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-flow: column;
+    gap: 10px;
+    align-items: flex-start;
+    height: 100%;
+    min-height: 540px;
+    padding: 20px;
+    border: 1px solid var(--text-white);
+    background: linear-gradient(181deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 4px 3px;
+    width: 100%;
+    transition: all 0.2s linear 0s;
+    overflow: hidden;
+}
