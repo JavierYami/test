@@ -71,3 +71,120 @@
     align-items: center;
     width: 70%;
 }
+.imgResponsive{
+    margin-top: 20px;
+    width: 80%;
+    display: none;
+}
+.buttonInfo{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 399px;
+    height: 101px;
+    color: var(--text-white);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50px;
+    background: var(--bg-button);
+    box-shadow: var(--box-shadow-button);
+}
+
+@media screen and (max-width: 900px){
+    .beneficiosContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .beneficiosImg{
+        display: none;
+        position: absolute;
+    }
+    .infoContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .beneficiosInfoContainer{
+        display: flex;
+        flex-flow: row;
+        clip-path: none;
+        width: 100%;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+    }
+    .imgResponsive{
+        margin-top: 20px;
+        width: 80%;
+        display: block;
+    }
+    .buttonInfo{
+        width: 200px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .title{
+        width: 100%;
+        font-size: 22px;
+        padding: 0px;
+    }
+    .titleContainer{
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .infoText{
+        font-size: 17px;
+        padding: 2px;
+    }
+    .beneficiosContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .beneficiosImg{
+        display: none;
+        position: absolute;
+    }
+    .infoContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .beneficiosInfoContainer{
+        display: flex;
+        flex-flow: row;
+        clip-path: none;
+        width: 100%;
+    }
+    .lista{
+        font-size: 15px;
+    }
+    .imgResponsive{
+        margin-top: 20px;
+        width: 100%;
+        display: block;
+    }
+    .buttonInfo{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+

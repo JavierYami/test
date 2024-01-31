@@ -9,7 +9,10 @@
     width: 100%;
     padding: 70px 40px;
 }
-
+.prestacionesTitle{
+    text-align: center;
+    color: #505050;
+}
 .prestacionesContainer {
     display: grid;
     padding: 40px;
@@ -38,7 +41,7 @@
     flex-flow: row;
     -webkit-box-align: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
     padding: 12px 64px 12px 15px;
     background: rgb(106, 180, 43);
     border: 1px solid var(--text-white);
@@ -87,4 +90,42 @@
 .elementText p{
 font-size: 15px;
 text-align: justify;
+}
+
+@media screen and (max-width: 860px){
+    .prestacionesContainer{
+        width: 90%;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .elementText.show{
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .prestacionesContainer{
+        width: 90%;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .prestacionesTitle{
+        font-size: 20px;
+    }
+    .elementTitle{
+        font-size: 18px;
+    }
+    .elementText.show{
+        width: 94%;
+    }
 }

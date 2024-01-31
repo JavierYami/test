@@ -45,11 +45,11 @@ const Form = () => {
 
     return ( 
         <div className="mainContainerForm">
-            <h1 style={{color:'white'}}>Quer saber se atende aos requisitos para solicitar este benefício ainda hoje?</h1>
-            <h1 style={{color:'white'}}>O mais importante: a nacionalidade brasileira. Você a tem? Vamos continuar</h1>
+            <h1 className='formTitle' style={{color:'white'}}>Quer saber se atende aos requisitos para solicitar este benefício ainda hoje?</h1>
+            <h1 className='formTitle' style={{color:'white'}}>O mais importante: a nacionalidade brasileira. Você a tem? Vamos continuar</h1>
             <div className='infoInversionesContainer'>
                 <div className='formContainer'>
-                    <p style={{color:'white'}}>Solicite o benefício hoje mesmo</p>
+                    <p  className="formTitle" style={{color:'white'}}>Solicite o benefício hoje mesmo</p>
                     <form className='formStyle'>
                         <div className='formControl'>
                             <label className='labelStyle' htmlFor="name" name="name">Nome</label>
@@ -67,7 +67,7 @@ const Form = () => {
                             <input value={formData.phone} onChange={handleChange} id="phone" name="phone" type="text" className='inputStylePhone' placeholder='11 1111-1111'/>
                         </div>
                         {formErrors.phone && <p style={{textAlign:'left', width:'100%'}} className='errorText'>{formErrors.phone}</p>}
-                        <button type='submit' onClick={handleSubmit}>Entre em contato</button>
+                        <button className="formButton" type='submit' onClick={handleSubmit}>Entre em contato</button>
                     </form>
                     <p style={{color: 'white', textAlign:'center', fontSize:'15px', maxWidth:'528px'}}>Aplicam-se termos e condições. Entre em contato conosco para saber se você está qualificado para começar a ganhar</p>
                 </div>

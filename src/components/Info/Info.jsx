@@ -19,7 +19,9 @@ const Info = () => {
                     <br/>
                     A maioria dos proprietários ainda acredita que um sistema de energia solar está fora do seu alcance... mas, e se lhe dissermos que não é? Na realidade, somando os incentivos e economias na conta de eletricidade, o maior beneficiário é o brasileiro comum. Muitos já estão ganhando R$4000, e hoje pode ser o próximo.</p>
                 </div>
+                <div style={{display:'flex', alignItems:'center'}}>
                 <img className='imgSavings' src="https://cmps-blanco.s3.amazonaws.com/pt/panels/solLivre_brasil/assets/pig-f700c9b5.webp" alt="cochinito"/>
+                </div>
             </div>
             <div className='beneficiosContainer'>
                 <div className='beneficiosImg'>
@@ -27,7 +29,7 @@ const Info = () => {
                 </div>
                 <div className='beneficiosInfoContainer'>
                     <div className='info'>
-                        <h3>Conheça os incríveis benefícios para os brasileiros entre 32 e 82 anos</h3>
+                        <h3 style={{color:"#505050"}}>Conheça os incríveis benefícios para os brasileiros entre 32 e 82 anos</h3>
                         <br />
                         <ul className='lista'>
                             <li>Os painéis solares podem aumentar o valor da sua casa</li>
@@ -42,11 +44,12 @@ const Info = () => {
                             <br />
                         </ul>
                         <br />
-                        <h3>Quer saber como a instalação de energia solar pode render até R$4000?</h3>
+                        <h3 style={{color:"#505050"}}>Quer saber como a instalação de energia solar pode render até R$4000?</h3>
                         <br />
-                        <button>Clique Aqui</button>
+                        <button className='buttonInfo'>Clique Aqui</button>
                     </div>
                 </div>
+                <img className='imgResponsive' src="https://cmps-blanco.s3.amazonaws.com/pt/panels/solLivre_brasil/assets/people-d01acd50.webp" alt="" />
             </div>
         </div>
     )

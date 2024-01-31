@@ -4,13 +4,13 @@ import './Consumo.css'
 const Consumo = () => {
     return (
         <div className="mainContainerConsumo">
-            <h1 style={{textAlign: 'center', margin:'35px'}}> Brasileiro, regozije-se! Este benefício é para si! Gere R$4000 com apenas 2 painéis</h1>
+            <h1 style={{textAlign: 'center', margin:'20px', color:'#505050'}}> Brasileiro, regozije-se! Este benefício é para si! Gere R$4000 com apenas 2 painéis</h1>
             <br />
             <div className='consumoContainer'>
                 <div className='consumoInfo'>
-                    <h3 style={{textAlign: 'center'}}>Em média, um lar no Brasil consome 900 kWh/mês. Isso significa que pode começar a ter mais e melhor energia!</h3>
+                    <h3 className='consumoSubtitle'>Em média, um lar no Brasil consome 900 kWh/mês. Isso significa que pode começar a ter mais e melhor energia!</h3>
                     <br />
-                    <p style={{textAlign: 'justify', fontSize: '22px'}}>Não acha extraordinário? Pela primeira vez, a energia será um ganho para si, não um gasto mensal (agora apenas verá MAIS e MAIS!).
+                    <p className='consumoText'>Não acha extraordinário? Pela primeira vez, a energia será um ganho para si, não um gasto mensal (agora apenas verá MAIS e MAIS!).
                     <br />
                     Sem dúvida, parece extraordinário, pois a norma é que a energia seja mais um gasto do que um investimento. No entanto, as contas mostrarão que esta é uma possibilidade real:
                     <br />
@@ -45,7 +45,7 @@ const Consumo = () => {
                 </div>
                 <div>
                     <br />
-                    <h1 style={{textAlign:"justify"}}>Obrigado por se informar conosco, estamos confiantes de que esta informação o convencerá a instalar energia solar na sua casa.</h1>
+                    <h1 className='consumoSubtitle' style={{textAlign:'justify'}}>Obrigado por se informar conosco, estamos confiantes de que esta informação o convencerá a instalar energia solar na sua casa.</h1>
                 </div>
                 </div>
             </div>

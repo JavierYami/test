@@ -9,7 +9,9 @@
     padding: 42px 42px 82px;
     background: linear-gradient(115deg, rgb(106, 180, 43) 0%, rgb(0, 62, 139) 100%);
 }
-
+.formTitle{
+    font-weight: 500px;
+}
 .infoInversionesContainer{
     display: flex;
     width: 100%;
@@ -191,4 +193,62 @@
     height: 164px;
     border-radius: 50%;
     z-index: 1;
+}
+
+.formButton {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 289px;
+    height: 68px;
+    border-radius: 34px;
+    border: 1px solid var(--border-input);
+    background: var(--bg-button);
+    color: var(--text-white);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1000px){
+    .infoInversionesContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .formContainer{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .reviewsContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .formContainer{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .formStyle{
+        width: 90%;
+    }
+    .formTitle{
+        font-size: 20px;
+    }
+    .reviewsContainer{
+        width: 100%;
+    }
+    .cardText{
+        font-size: 17px;
+    }
+    .formButton{
+        width: 200px;
+        font-size: 17px;
+    }
 }
