@@ -92,6 +92,55 @@
     background: var(--bg-input);
     font-weight: 700;
     font-size: 20px;
+    outline: none;
+
+}
+
+.inputStylePhone{
+    width: 100%;
+    font-weight: 700;
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+
+}
+.formControlPhone {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 68px;
+    border-radius: 10px;
+    border: 1px solid var(--border-input);
+    background: var(--bg-input);
+}
+.divPhone {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-flow: row;
+    gap: 6px;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 9px 0px 17px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: var(--text-white);
+    color: var(--text-black);
+    font-weight: 700;
+}
+.divPhone::before {
+    content: "";
+    display: block;
+    background: url(https://cdn.ipregistry.co/flags/wikimedia/mx.svg) center center / cover no-repeat;
+    width: 38px;
+    height: 28.5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
 }
 
 .cardContainer {
