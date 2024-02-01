@@ -33,7 +33,7 @@ const Form = () => {
         
         setFormErrors(validation({...formData, [name]: value}))
 
-        if (Object.keys(errors).length === 0) {
+        if (Object.keys(formErrors).length === 0) {
             setFormData({
                 name: '',
                 email: '',
@@ -61,12 +61,16 @@ const Form = () => {
                             <input value={formData.email} onChange={handleChange} type="text" id="email" name="email" className='inputStyle' placeholder='maria.santos@example.com'/>
                             {formErrors.email && <p className='errorText'>{formErrors.email}</p>}
                         </div>
-                        <label style={{textAlign:'left', width:'100%'}} className='labelStyle ' htmlFor="name" name="name">Numero de telefone</label>
+
                         <div className='formControlPhone'>
-                            <div className='divPhone'>+52</div>
-                            <input value={formData.phone} onChange={handleChange} id="phone" name="phone" type="text" className='inputStylePhone' placeholder='11 1111-1111'/>
+                            <label style={{alignSelf:'flex-start'}} className='labelStyle ' htmlFor="name" name="name">Numero de telefone</label>
+                            <div className='inputWithIcon'>
+                                <img className='inputIcon' src="https://cdn.ipregistry.co/flags/wikimedia/mx.svg" alt=""/>
+                                <input style={{width:'100%'}} value={formData.phone} onChange={handleChange} id="phone" name="phone" type="text" className='inputStyle' placeholder='11 1111-1111'/>
+                            </div>
+                            {formErrors.phone && <p style={{textAlign:'left', width:'100%'}} className='errorText'>{formErrors.phone}</p>}
                         </div>
-                        {formErrors.phone && <p style={{textAlign:'left', width:'100%'}} className='errorText'>{formErrors.phone}</p>}
+
                         <button className="formButton" type='submit' onClick={handleSubmit}>Entre em contato</button>
                     </form>
                     <p style={{color: 'white', textAlign:'center', fontSize:'15px', maxWidth:'528px'}}>Aplicam-se termos e condições. Entre em contato conosco para saber se você está qualificado para começar a ganhar</p>

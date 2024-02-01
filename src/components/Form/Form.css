@@ -43,8 +43,23 @@
     align-items: flex-start;
     width: 100%;
 }
-
+.inputWithIcon {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.inputIcon {
+    position: absolute;
+    left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: auto;
+    pointer-events: none;
+}
 .labelStyle{
+    font-size: 22px;
     font-weight: 700;
     color: var(--bg-gray-inputs);
 }
@@ -70,10 +85,10 @@
     -webkit-box-pack: center;
     justify-content: center;
     flex-flow: column;
-    gap: 20px;
+    gap: 10px;
     -webkit-box-align: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     max-width: 528px;
     height: auto;
     min-height: 511px;
@@ -110,16 +125,11 @@
 }
 .formControlPhone {
     display: flex;
-    -webkit-box-pack: center;
+    flex-flow: column;
     justify-content: center;
-    flex-flow: row;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-    width: 100%;
-    height: 68px;
-    border-radius: 10px;
-    border: 1px solid var(--border-input);
-    background: var(--bg-input);
+    align-items: center;
+    gap: 5px;
+    width: 100%;    
 }
 .divPhone {
     display: flex;
@@ -227,16 +237,48 @@
     .reviewsContainer{
         width: 100%;
     }
+    .formStyle{
+        min-height: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px){
-    .formContainer{
+    .formControl{
         width: 100%;
-        padding: 0px;
-        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .formTitle{
+        text-align: center;
+    }
+    .formControlPhone{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .divPhone{
+        padding: 5px;
     }
     .formStyle{
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .inputStyle{
         width: 90%;
+        padding: 10px 10px;
+        font-size: 15px;
+        height: 40px;
     }
     .formTitle{
         font-size: 20px;
@@ -248,7 +290,20 @@
         font-size: 17px;
     }
     .formButton{
-        width: 200px;
-        font-size: 17px;
+        width: 250px;
+        height: 63xpx;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px){
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardContainerTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
