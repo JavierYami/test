@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Form.css';
 import { validation } from './validation';
+import {API_KEY} from '../../../api'
+import axios from 'axios';
 
-const Form = () => {
+    const Form = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -43,6 +45,16 @@ const Form = () => {
         }
     };
 
+    const url = "https://geo.ipify.org/api/v2/country?apiKey="
+
+    const [country, setCountry] = useState ("");
+
+    useEffect( () => {
+            axios.get(`${url}${API_KEY}`).then(res => {
+                setCountry(res.data.location.country);
+            }).catch(err => console.log(err))
+    }, [country])
+
     return ( 
         <div className="mainContainerForm">
             <h1 className='formTitle' style={{color:'white'}}>Quer saber se atende aos requisitos para solicitar este benefício ainda hoje?</h1>
@@ -66,7 +78,7 @@ const Form = () => {
                             <label style={{alignSelf:'flex-start'}} className='labelStyle ' htmlFor="name" name="name">Numero de telefone</label>
                             <div className='inputWithIcon'>
                                 <img className='inputIcon' src="https://cdn.ipregistry.co/flags/wikimedia/mx.svg" alt=""/>
-                                <input style={{width:'100%'}} value={formData.phone} onChange={handleChange} id="phone" name="phone" type="text" className='inputStyle' placeholder='11 1111-1111'/>
+                                <input style={{ paddingLeft:'80px'}} value={formData.phone} onChange={handleChange} id="phone" name="phone" type="text" className='inputStyle' placeholder='11 1111-1111'/>
                             </div>
                             {formErrors.phone && <p style={{textAlign:'left', width:'100%'}} className='errorText'>{formErrors.phone}</p>}
                         </div>
