@@ -77,7 +77,7 @@ import axios from 'axios';
                         <div className='formControlPhone'>
                             <label style={{alignSelf:'flex-start'}} className='labelStyle ' htmlFor="name" name="name">Numero de telefone</label>
                             <div className='inputWithIcon'>
-                                <img className='inputIcon' src="https://cdn.ipregistry.co/flags/wikimedia/mx.svg" alt=""/>
+                                <img className='inputIcon' src={`${country}.jpg`} alt=""/>
                                 <input style={{ paddingLeft:'80px'}} value={formData.phone} onChange={handleChange} id="phone" name="phone" type="text" className='inputStyle' placeholder='11 1111-1111'/>
                             </div>
                             {formErrors.phone && <p style={{textAlign:'left', width:'100%'}} className='errorText'>{formErrors.phone}</p>}
