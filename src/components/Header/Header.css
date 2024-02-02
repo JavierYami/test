@@ -10,7 +10,7 @@
     color: var(--text-primary);
     font-family: var(--primary-font);
     font-weight:600;
-    font-size: 45px;
+    font-size: 50px;
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
@@ -234,15 +234,15 @@ button{
         position: initial;
         max-width: 300px;
         width: 100%;
-        margin-bottom: -50px;
+        margin-bottom: -30px;
     }
     .containerInfoHeader{
         border-radius: 39px;
-        font-size: 10px;
         gap: 12px;
-        padding:1px;
-        height: 100px;
-        display: none;
+        padding:15px;
+        width: 95%;
+        min-height: 0;
+        min-width: 0;
     }
     .logoTitle{
         font-size: 20px;

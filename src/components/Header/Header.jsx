@@ -5,7 +5,7 @@ const Header  = () => {
     return (
         <>
         <section>
-            <h1 className="title">SolLivre Brasil | Publicidade</h1>
+            <p className="title">SolLivre Brasil | Publicidade</p>
         </section>
         <section className='headerContainer'>
             <div className='logoContainer'>

@@ -195,6 +195,7 @@
 .cardText {
     color: var(--text-white);
     z-index: 1;
+    padding: 10px;
     font-weight: 400;
 }
 
