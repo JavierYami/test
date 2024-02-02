@@ -298,8 +298,6 @@
         height: 63xpx;
         font-size: 15px;
     }
-}
-@media screen and (max-width: 400px){
     .cardContainer{
         display: flex;
         flex-direction: column;
@@ -310,4 +308,5 @@
         flex-direction: column;
         align-items: center;
     }
+    
 }
