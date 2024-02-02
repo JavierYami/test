@@ -46,7 +46,9 @@ const Info = () => {
                         <br />
                         <h3 style={{color:"#505050"}}>Quer saber como a instalação de energia solar pode render até R$4000?</h3>
                         <br />
-                        <button className='buttonInfo'>Clique Aqui</button>
+                        <a href="#form">
+                            <button className='buttonInfo'>Clique Aqui</button>
+                        </a>
                     </div>
                 </div>
                 <img className='imgResponsive' src="https://cmps-blanco.s3.amazonaws.com/pt/panels/solLivre_brasil/assets/people-d01acd50.webp" alt="" />

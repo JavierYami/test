@@ -18,7 +18,9 @@ const Header  = () => {
                 <div className='containerInfoHeader'>
                     <p className='infoTitle'>Se você nasceu no Brasil entre 1941 e 1991, pode estar perdendo uma grande oportunidade</p>
                     <p className='infoSubtitle'>Muitos brasileiros já estão ganhando um bônus de R$4000 sem sair de casa! Aprovado pela cidade para aumentar a energia limpa e economizar na sua conta de eletricidade </p>
-                    <button className='buttonHeader'>Conheça o bônus!</button>
+                    <a href="#form">
+                        <button className='buttonHeader'>Conheça o bônus!</button>
+                    </a>
                 </div>
             </div>
         </section>

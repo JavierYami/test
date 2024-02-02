@@ -56,7 +56,7 @@ import axios from 'axios';
     }, [country])
 
     return ( 
-        <div className="mainContainerForm">
+        <div id='form' className="mainContainerForm">
             <h1 className='formTitle' style={{color:'white'}}>Quer saber se atende aos requisitos para solicitar este benefício ainda hoje?</h1>
             <h1 className='formTitle' style={{color:'white'}}>O mais importante: a nacionalidade brasileira. Você a tem? Vamos continuar</h1>
             <div className='infoInversionesContainer'>
