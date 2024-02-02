@@ -22,8 +22,8 @@ const Consumo = () => {
                 </div>
                 <div className='flexContainerConsumo'>
                     <div className='consumoGrid'>
-                        <h3 style={{textAlign:'center'}}>CONSUMO</h3>
-                        <h3 style={{textAlign:'center'}}>NÚMERO DE PAINÉIS</h3>
+                        <h3 style={{textAlign:'center', color:'#505050'}}>CONSUMO</h3>
+                        <h3 style={{textAlign:'center', color:'#505050'}}>NÚMERO DE PAINÉIS</h3>
                         <div className="consumoColumn">
                             <p>Até 2.000 kWh</p>
                         </div>
@@ -45,7 +45,7 @@ const Consumo = () => {
                 </div>
                 <div>
                     <br />
-                    <h1 className='consumoSubtitle' style={{textAlign:'justify'}}>Obrigado por se informar conosco, estamos confiantes de que esta informação o convencerá a instalar energia solar na sua casa.</h1>
+                    <h1 className='consumoSubtitle'>Obrigado por se informar conosco, estamos confiantes de que esta informação o convencerá a instalar energia solar na sua casa.</h1>
                 </div>
                 </div>
             </div>

@@ -5,19 +5,22 @@
     display: flex;
 }
 .consumoSubtitle{
-    text-align: center;
-    margin: 20px 0px;
-    font-size: 20px;
+    text-align: justify;
+    margin: 10px 0px;
+    font-weight: 500;
+    padding: 20px;
+    font-size: 30px;
     width: 100%;
     color: #505050;
 }
 
 .consumoText{
     text-align: justify;
-    font-size: 20px;
+    font-size: 22px;
 }
 .consumoInfo {
     width: 50%;
+    padding: 10px;
 }
 .consumoGrid{
     margin-bottom: 20px;
@@ -82,6 +85,9 @@
     }
     .consumoSubtitle{
         font-size: 18px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
     }
     .consumoText{
         font-size: 17px;
