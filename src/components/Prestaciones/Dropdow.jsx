@@ -10,7 +10,7 @@ const toggleContent = () => {
 
 
     return (
-        <div>
+        <div className="dropdownContainer">
             <div className="elementTitle" onClick={toggleContent}>{title}</div>
             <div className={`elementText ${showContent ? 'show' : ''}`}>
                 <p>{text}</p>

@@ -9,6 +9,12 @@
     width: 100%;
     padding: 70px 40px;
 }
+.dropdownContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 .prestacionesTitle{
     text-align: center;
     color: #505050;
@@ -110,7 +116,7 @@ text-align: justify;
 
 @media screen and (max-width: 600px){
     .prestacionesContainer{
-        width: 90%;
+        width: 80%;
         gap: 20px;
         display: flex;
         justify-content: center;

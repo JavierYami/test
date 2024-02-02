@@ -44,6 +44,11 @@
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 1300px){
+    .consumoSubtitle{
+        margin: 50px 0px;
+    }
+}
 
 @media screen and (max-width: 760px){
     .consumoContainer{
