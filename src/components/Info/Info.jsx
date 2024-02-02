@@ -29,7 +29,7 @@ const Info = () => {
                 </div>
                 <div className='beneficiosInfoContainer'>
                     <div className='info'>
-                        <h3 style={{color:"#505050"}}>Conheça os incríveis benefícios para os brasileiros entre 32 e 82 anos</h3>
+                        <h3 style={{color:"#505050", padding: '10px'}}>Conheç    a os incríveis benefícios para os brasileiros entre 32 e 82 anos</h3>
                         <br />
                         <ul className='lista'>
                             <li>Os painéis solares podem aumentar o valor da sua casa</li>
@@ -44,7 +44,7 @@ const Info = () => {
                             <br />
                         </ul>
                         <br />
-                        <h3 style={{color:"#505050"}}>Quer saber como a instalação de energia solar pode render até R$4000?</h3>
+                        <h3 style={{color:"#505050", padding:'10px'}}>Quer saber como a instalação de energia solar pode render até R$4000?</h3>
                         <br />
                         <a href="#form">
                             <button className='buttonInfo'>Clique Aqui</button>

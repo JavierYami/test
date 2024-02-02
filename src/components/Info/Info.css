@@ -143,6 +143,9 @@
         width: 300px;
         height: auto;
     }
+    .infoTitle{
+        padding: 12px;
+    }
     .title{
         width: 100%;
         font-size: 22px;
@@ -154,7 +157,7 @@
     }
     .infoText{
         font-size: 17px;
-        padding: 2px;
+        padding: 10px;
     }
     .beneficiosContainer{
         display: flex;
@@ -183,7 +186,7 @@
     }
     .imgResponsive{
         margin-top: 20px;
-        width: 100%;
+        width: 90%;
         display: block;
     }
     .buttonInfo{
